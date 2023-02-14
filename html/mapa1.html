@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c3b799ff29cb02d911f5577d402b2add {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c3b799ff29cb02d911f5577d402b2add" ></div>
+        
+</body>
+<script>    
+    
+            var map_c3b799ff29cb02d911f5577d402b2add = L.map(
+                "map_c3b799ff29cb02d911f5577d402b2add",
+                {
+                    center: [4.666667, -74.083333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    size: [200, 200],
+                    forRatios: 2,
+                    detectRetina: true,
+                }
+            );
+            L.control.scale().addTo(map_c3b799ff29cb02d911f5577d402b2add);
+
+            
+
+        
+    
+            var tile_layer_f0f724fd5b2cde363208b3f553cc7799 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c3b799ff29cb02d911f5577d402b2add);
+        
+    
+            var marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b = L.markerClusterGroup(
+                {}
+            );
+            map_c3b799ff29cb02d911f5577d402b2add.addLayer(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var marker_dde0107747a52140e1b262f57397302b = L.marker(
+                [4.6386264, -74.11693832515948],
+                {}
+            ).addTo(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var icon_af05fe169a561efaa62830f2e919c8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_dde0107747a52140e1b262f57397302b.setIcon(icon_af05fe169a561efaa62830f2e919c8ac);
+        
+    
+        var popup_f1b694ba217dd957b9e6f26ab96beb0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce9b58e64bf3ac53298bdd3ced6088a2 = $(`<div id="html_ce9b58e64bf3ac53298bdd3ced6088a2" style="width: 100.0%; height: 100.0%;">Calle 13, Puente Aranda, Bogotá</div>`)[0];
+                popup_f1b694ba217dd957b9e6f26ab96beb0f.setContent(html_ce9b58e64bf3ac53298bdd3ced6088a2);
+            
+        
+
+        marker_dde0107747a52140e1b262f57397302b.bindPopup(popup_f1b694ba217dd957b9e6f26ab96beb0f)
+        ;
+
+        
+    
+    
+            var marker_bfc8e0eee0aeef499ad34a8b2795caae = L.marker(
+                [4.70816235, -74.05622046620164],
+                {}
+            ).addTo(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var icon_bb1ee456cf050f2d30c9c78966dfb566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_bfc8e0eee0aeef499ad34a8b2795caae.setIcon(icon_bb1ee456cf050f2d30c9c78966dfb566);
+        
+    
+        var popup_7a7c12c7119b5b8fe35c71242557803d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f1783ea4d389afa9565eb7dd2e8a9ea = $(`<div id="html_2f1783ea4d389afa9565eb7dd2e8a9ea" style="width: 100.0%; height: 100.0%;">Suba, Suba, Bogotá</div>`)[0];
+                popup_7a7c12c7119b5b8fe35c71242557803d.setContent(html_2f1783ea4d389afa9565eb7dd2e8a9ea);
+            
+        
+
+        marker_bfc8e0eee0aeef499ad34a8b2795caae.bindPopup(popup_7a7c12c7119b5b8fe35c71242557803d)
+        ;
+
+        
+    
+    
+            var marker_e1578268476faf172e426b8634d785ef = L.marker(
+                [4.6875886, -74.0332445],
+                {}
+            ).addTo(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var icon_efb6f84f410c49149a5b8ba65f7159d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e1578268476faf172e426b8634d785ef.setIcon(icon_efb6f84f410c49149a5b8ba65f7159d9);
+        
+    
+        var popup_0ce564592b3b0e3e278f6adccde121d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c0359b2d00637ce787e2fe63889a61a = $(`<div id="html_5c0359b2d00637ce787e2fe63889a61a" style="width: 100.0%; height: 100.0%;">Santa ana, Usaquen, Bogotá</div>`)[0];
+                popup_0ce564592b3b0e3e278f6adccde121d2.setContent(html_5c0359b2d00637ce787e2fe63889a61a);
+            
+        
+
+        marker_e1578268476faf172e426b8634d785ef.bindPopup(popup_0ce564592b3b0e3e278f6adccde121d2)
+        ;
+
+        
+    
+    
+            var marker_882fc5b426d4b359241c1700cbe33220 = L.marker(
+                [4.7284908, -74.1265966],
+                {}
+            ).addTo(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var icon_cc915b0c6838a0f111e1ec187b615605 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_882fc5b426d4b359241c1700cbe33220.setIcon(icon_cc915b0c6838a0f111e1ec187b615605);
+        
+    
+        var popup_062b27546254971bb699e467f08dce05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d997721d3be769af9a2648acaa6359ad = $(`<div id="html_d997721d3be769af9a2648acaa6359ad" style="width: 100.0%; height: 100.0%;">Calle 80, Engativa, Bogotá</div>`)[0];
+                popup_062b27546254971bb699e467f08dce05.setContent(html_d997721d3be769af9a2648acaa6359ad);
+            
+        
+
+        marker_882fc5b426d4b359241c1700cbe33220.bindPopup(popup_062b27546254971bb699e467f08dce05)
+        ;
+
+        
+    
+    
+            var marker_e718439afde872df0e1f0f180a9a0b71 = L.marker(
+                [4.6661427, -74.0746373799979],
+                {}
+            ).addTo(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var icon_7dcd68aa3b3e67d1dcda711c3e36e6c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e718439afde872df0e1f0f180a9a0b71.setIcon(icon_7dcd68aa3b3e67d1dcda711c3e36e6c5);
+        
+    
+        var popup_07019113a2aa027d9d4231e6d8ea2627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e62b1c19b9c2e470447dedee015122b0 = $(`<div id="html_e62b1c19b9c2e470447dedee015122b0" style="width: 100.0%; height: 100.0%;">Av Chile, Barrios unidos, Bogotá</div>`)[0];
+                popup_07019113a2aa027d9d4231e6d8ea2627.setContent(html_e62b1c19b9c2e470447dedee015122b0);
+            
+        
+
+        marker_e718439afde872df0e1f0f180a9a0b71.bindPopup(popup_07019113a2aa027d9d4231e6d8ea2627)
+        ;
+
+        
+    
+    
+            var marker_71d7d482136645090730b86b2c76ba72 = L.marker(
+                [4.5574286, -74.119339],
+                {}
+            ).addTo(marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b);
+        
+    
+            var icon_d7e2c3d8e98dc8e8683840c57e449d7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_71d7d482136645090730b86b2c76ba72.setIcon(icon_d7e2c3d8e98dc8e8683840c57e449d7f);
+        
+    
+        var popup_099ba97019176635b141ac4b4cd9bc63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_827247cb5002982622ca64befa02ad7f = $(`<div id="html_827247cb5002982622ca64befa02ad7f" style="width: 100.0%; height: 100.0%;">Carrera 7 75 51, Bogotá</div>`)[0];
+                popup_099ba97019176635b141ac4b4cd9bc63.setContent(html_827247cb5002982622ca64befa02ad7f);
+            
+        
+
+        marker_71d7d482136645090730b86b2c76ba72.bindPopup(popup_099ba97019176635b141ac4b4cd9bc63)
+        ;
+
+        
+    
+    
+            var layer_control_aa1e447c5eeaf9a53e721c3e6487d4f1 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_f0f724fd5b2cde363208b3f553cc7799,
+                },
+                overlays :  {
+                    "Localidades" : marker_cluster_c9cc1a76fe0d22e780dfae1242583f5b,
+                },
+            };
+            L.control.layers(
+                layer_control_aa1e447c5eeaf9a53e721c3e6487d4f1.base_layers,
+                layer_control_aa1e447c5eeaf9a53e721c3e6487d4f1.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c3b799ff29cb02d911f5577d402b2add);
+        
+</script>
